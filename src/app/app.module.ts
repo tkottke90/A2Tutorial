@@ -8,13 +8,15 @@ import { HeaderComponent } from './components/component.header/component.header'
 import { CardContainer } from './components/card-container/component.card-container';
 
 import { TestCard } from 'app/components/cards/test-card/test-card.component';
+import { AddCard } from 'app/components/cards/add-card/add-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CardContainer,
-    TestCard
+    TestCard,
+    AddCard
   ],
   imports: [
     BrowserModule,

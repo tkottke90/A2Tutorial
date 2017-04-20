@@ -1,0 +1,8 @@
+:host {
+    width: 98%;
+    margin: 1%;
+    padding: 1%;
+       
+    display: block;
+    box-sizing: border-box;
+}

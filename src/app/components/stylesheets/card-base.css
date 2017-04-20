@@ -1,14 +1,20 @@
+*{
+    font-family: sans-serif;
+}
 :host {
-    width: 25%;
-    border: 1px solid black;
+    max-width: 50%;
+    background-color: rgb(221, 239, 221);
     border-radius: 2%;
     display: inline-block;
+    box-sizing: border-box;
     margin: 2%;
     padding: 2%;
     z-index: 2;
     transition: box-shadow 0.5s;
     -webkit-transition: box-shadow 0.5s;
     -moz-transition: box-shadow 0.5;
+    
+    
 }
 
 :host:hover {
@@ -21,10 +27,47 @@ h1 {
     text-align: center;
 }
 
-.remove {
-    z-index: 10;
-    float: right;
-    
+.delete {
+    color: rgb(183, 207, 231);
+    text-align: right;
+    background-color: inherit;
+    border: 0;
+    font-size: 1.75vmin;
     display: block;
-    
+
+    cursor: pointer;
+
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5;
+
+}
+
+.delete:hover{
+    color: rgb(100, 130, 160);
+}
+
+p {
+    display: inline-block;
+}
+
+img{
+    display: inline-block;
+}
+
+pre {
+    align-self: center;
+    width: 95%;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.27);
+    margin: 2%;
+    padding: 2%;
+    white-space: none;
+
+    overflow-x: scroll;
+}
+
+.modifiers {
+    display: none;
 }

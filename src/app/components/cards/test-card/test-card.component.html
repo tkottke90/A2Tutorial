@@ -1,3 +1,13 @@
-<h1>{{cardData.header | slice: 0: 20}}</h1>
-<p *ngIf="descShow">{{ cardData.description }}</p>
 <div class="delete">X</div>
+<h1>{{cardData.header}}</h1>
+
+<p *ngIf="isTextEnabled">{{ cardData.description }}</p>
+<a *ngIf="isImageEnabled" [href]="cardData.imageURL"><img [src]="cardData.imageURL" [alt]="cardData.header"></a>
+<pre *ngIf="isCodeEnabled"><code [innerHTML]="myCode"></code></pre>
+
+<div class="modifiers">
+    <div id="share"></div>
+    <div id="modify"></div>
+    <div id="color"></div>
+    <div id="archive"></div>
+</div>
