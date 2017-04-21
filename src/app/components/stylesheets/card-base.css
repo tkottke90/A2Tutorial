@@ -3,6 +3,8 @@
 }
 :host {
     max-width: 50%;
+
+    min-height: 30px;
     background-color: rgb(221, 239, 221);
     border-radius: 2%;
     display: inline-block;
@@ -25,6 +27,7 @@
 h1 {
     font-size: 3vmin;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .delete {
@@ -32,7 +35,7 @@ h1 {
     text-align: right;
     background-color: inherit;
     border: 0;
-    font-size: 1.75vmin;
+    font-size: 15px;
     display: block;
 
     cursor: pointer;
@@ -53,6 +56,9 @@ p {
 
 img{
     display: inline-block;
+    align-self: center;
+    width: 95%;
+    height: 95%;
 }
 
 pre {
