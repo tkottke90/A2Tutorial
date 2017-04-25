@@ -4,7 +4,7 @@ import { Card, CardType } from 'app/services/card-manager.service';
 @Component({
     selector: 'test-card',
     templateUrl: './test-card.component.html',
-    styleUrls: ['../../stylesheets/card-base.css']
+    styleUrls: ['../../stylesheets/card-base.css','../../stylesheets/card-base.mobile.css']
 })
 export class TestCard implements OnInit{
     @Input() cardData: Card;

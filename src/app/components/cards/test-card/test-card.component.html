@@ -1,8 +1,13 @@
 <div class="delete">X</div>
+<div class="imageDiv" *ngIf="isImageEnabled">
+    <a [href]="cardData.imageURL">
+        <img [src]="cardData.imageURL" [alt]="cardData.header">
+    </a>
+</div>
 <h1>{{cardData.header}}</h1>
 
 <p *ngIf="isTextEnabled">{{ cardData.description }}</p>
-<a *ngIf="isImageEnabled" [href]="cardData.imageURL"><img [src]="cardData.imageURL" [alt]="cardData.header"></a>
+
 <pre *ngIf="isCodeEnabled"><code [innerHTML]="myCode"></code></pre>
 
 <div class="modifiers">
