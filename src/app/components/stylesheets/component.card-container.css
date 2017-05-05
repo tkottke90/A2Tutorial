@@ -6,3 +6,20 @@
     display: block;
     box-sizing: border-box;
 }
+
+.wrap {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+@media only screen and (max-width: 575px){
+    .wrap{
+        width: 550px ;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .wrap{
+        width: 95%;
+    }
+}

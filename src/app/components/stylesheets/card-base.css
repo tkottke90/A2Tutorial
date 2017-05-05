@@ -2,15 +2,14 @@
     font-family: sans-serif;
 }
 :host {
-    max-width: 50%;
-    min-height: 30px;
+    width: 240px;
+    min-height: 200px;
     background-color: rgb(221, 239, 221);
     border-radius: 2%;
     display: inline-block;
     box-sizing: border-box;
     position: relative;
     margin: 2%;
-    padding: 2%;
     align-content: center;
     z-index: 100;
     overflow: hidden;
@@ -18,19 +17,31 @@
     transition: box-shadow 0.5s;
     -webkit-transition: box-shadow 0.5s;
     -moz-transition: box-shadow 0.5;
-    
+
+    transition: transform 0.25s;
     
 }
 
 :host:hover {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), -1px -1px 6px 0px rgba(0, 0, 0, 0.25) ;
     z-index: 8;
+    transform: translate(0,-2px);
 }
+
+:host.focused{
+    width: 70%;
+    height: 70%;
+}
+
 
 h1 {
     font-size: 3vmin;
     text-align: center;
     box-sizing: border-box;
+}
+
+h1.hText {
+    margin: 10% 5% 0 5%;
 }
 
 .delete {
@@ -40,7 +51,8 @@ h1 {
     display: block;
     cursor: pointer;
     z-index: 201;
-    float: right;
+    position: absolute;
+    right: 0;
 
     margin: 10px;
 
@@ -56,6 +68,7 @@ h1 {
 
 p {
     display: inline-block;
+    margin: 10% 5%; 
 }
 
 .imageDiv {
@@ -70,11 +83,11 @@ img{
 
 pre {
     align-self: center;
-    width: 95%;
+    width: 90%;
     display: inline-block;
     box-sizing: border-box;
-    box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.27);
-    margin: 2%;
+    
+    margin: 0 5% 10% 5%; 
     padding: 2%;
     white-space: none;
 

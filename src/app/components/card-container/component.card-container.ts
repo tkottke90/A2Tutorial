@@ -22,7 +22,8 @@ export class CardContainer {
         "+ 'AICoordinateSpacing|' + coordSpacing + \\r\\n",  
         "+ 'AICalcFitness|",   
         "+ String.Format('{0}-{1}-{2}-{3}-{4}-{5}', genCoordFitness[0],genCoordFitness[1],genCoordFitness[2],genCoordFitness[3],genCoordFitness[4],genCoordFitness[5]);"]),
-        new Card("image", "Triforce Image", "http://www.thinkgeek.com/images/products/additional/large/jipm_loz_triforce_light_vendor.jpg")    
+        new Card("image", "Triforce Image", "http://www.thinkgeek.com/images/products/additional/large/jipm_loz_triforce_light_vendor.jpg"),
+        new Card("image", "D Va Play of the Game", "https://keep.google.com/u/0/media/1ky3DwDqEpPeoWhfjQOB9uU6D25TwJmE?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=w794-h894")    
     ];
 
     constructor(){

@@ -14,7 +14,7 @@ export class TestCard implements OnInit{
     isTextEnabled: boolean = false;
     isImageEnabled: boolean = false;
     isCodeEnabled: boolean = false;
-
+    isHoverTarget: boolean = false;
 
     ngOnInit(){
         console.log(this.cardData.type);
