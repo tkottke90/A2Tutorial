@@ -8,13 +8,12 @@ import { Card, CardType } from 'app/services/card-manager.service';
 })
 export class TestCard implements OnInit{
     @Input() cardData: Card;
-
+    @Input() isHoverTarget: boolean = false;
     myCode = "";
 
     isTextEnabled: boolean = false;
     isImageEnabled: boolean = false;
     isCodeEnabled: boolean = false;
-    isHoverTarget: boolean = false;
 
     ngOnInit(){
         console.log(this.cardData.type);

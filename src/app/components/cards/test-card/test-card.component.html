@@ -1,4 +1,3 @@
-<div class="delete">X</div>
 <div class="imageDiv" *ngIf="isImageEnabled">
     <a [href]="cardData.imageURL">
         <img [src]="cardData.imageURL" [alt]="cardData.header">
@@ -15,6 +14,6 @@
 <div *ngIf="isHoverTarget" class="modifiers">
     <div id="share"></div>
     <div id="modify"></div>
-    <div id="color"></div>
+    <div id="delete"></div>
     <div id="archive"></div>
 </div>

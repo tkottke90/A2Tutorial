@@ -3,7 +3,7 @@
 }
 :host {
     width: 240px;
-    min-height: 200px;
+    min-height: 300px;
     background-color: rgb(221, 239, 221);
     border-radius: 2%;
     display: inline-block;
@@ -42,28 +42,6 @@ h1 {
 
 h1.hText {
     margin: 10% 5% 0 5%;
-}
-
-.delete {
-    color: rgb(183, 207, 231);
-    background-color: rgba(0,0,0,0);
-    font-size: 15px;
-    display: block;
-    cursor: pointer;
-    z-index: 201;
-    position: absolute;
-    right: 0;
-
-    margin: 10px;
-
-    transition: color 0.5s;
-    -webkit-transition: color 0.5s;
-    -moz-transition: color 0.5;
-
-}
-
-.delete:hover{
-    color: rgb(100, 130, 160);
 }
 
 p {
