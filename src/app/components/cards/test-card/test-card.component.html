@@ -1,4 +1,3 @@
-<div class="delete">X</div>
 <div class="imageDiv" *ngIf="isImageEnabled">
     <a [href]="cardData.imageURL">
         <img [src]="cardData.imageURL" [alt]="cardData.header">
@@ -12,9 +11,11 @@
 
 <pre *ngIf="isCodeEnabled"><code [innerHTML]="myCode"></code></pre>
 
-<div *ngIf="isHoverTarget" class="modifiers">
-    <div id="share"></div>
-    <div id="modify"></div>
-    <div id="color"></div>
-    <div id="archive"></div>
+<div class="modifiers">
+    <button id="share" *ngIf="isHoverTarget">
+        <img src="../../../../assets/share-icon.png" alt="share">
+    </button>
+    <button id="modify" *ngIf="isHoverTarget">modify</button>
+    <button id="archive" *ngIf="isHoverTarget">archive</button>
+    <button id="delete" *ngIf="isHoverTarget">delete</button>
 </div>

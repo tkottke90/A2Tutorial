@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit , HostListener } from '@angular/core';
 import { Card, CardType } from 'app/services/card-manager.service';
 
 @Component({
@@ -8,6 +8,13 @@ import { Card, CardType } from 'app/services/card-manager.service';
 })
 export class TestCard implements OnInit{
     @Input() cardData: Card;
+    @HostListener('mouseenter') MouseEnter() {
+        this.isHoverTarget = true;
+    }
+
+    @HostListener('mouseleave') MouseLeave() {
+        this.isHoverTarget = false;
+    }   
 
     myCode = "";
 
@@ -21,6 +28,8 @@ export class TestCard implements OnInit{
         console.log(CardType[this.cardData.type]);
         switch(CardType[this.cardData.type]){
             case 0:
+                this.isTextEnabled = true;
+                this.isImageEnabled, this.isCodeEnabled = false;
                 break;
             case 1:
                 this.isTextEnabled = true;
@@ -43,6 +52,8 @@ export class TestCard implements OnInit{
             default:
         }    
     }
+
+    onHover(){ } 
 
     evaluateCode(lang: string,code: string){
 

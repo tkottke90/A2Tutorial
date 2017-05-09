@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 export enum CardType {
-    add,
+    quick,
     text,
     image,
     list,
@@ -36,7 +36,7 @@ export class Card{
     getType(type: string, data: any){
         let card = CardType[type];
         switch(card){
-            case 0: // Add Card
+            case 0: // Quick Text Card
                 break;
             case 1: // Text Card
                 this.description = data;

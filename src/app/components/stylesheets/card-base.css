@@ -3,7 +3,7 @@
 }
 :host {
     width: 240px;
-    min-height: 200px;
+    min-height: 240px;
     background-color: rgb(221, 239, 221);
     border-radius: 2%;
     display: inline-block;
@@ -14,25 +14,17 @@
     z-index: 100;
     overflow: hidden;
 
-    transition: box-shadow 0.5s;
-    -webkit-transition: box-shadow 0.5s;
-    -moz-transition: box-shadow 0.5;
+    transition: box-shadow 1s;
+    -webkit-transition: box-shadow 1s;
+    -moz-transition: box-shadow 1s;
 
-    transition: transform 0.25s;
     
 }
 
 :host:hover {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), -1px -1px 6px 0px rgba(0, 0, 0, 0.25) ;
     z-index: 8;
-    transform: translate(0,-2px);
 }
-
-:host.focused{
-    width: 70%;
-    height: 70%;
-}
-
 
 h1 {
     font-size: 3vmin;
@@ -42,28 +34,6 @@ h1 {
 
 h1.hText {
     margin: 10% 5% 0 5%;
-}
-
-.delete {
-    color: rgb(183, 207, 231);
-    background-color: rgba(0,0,0,0);
-    font-size: 15px;
-    display: block;
-    cursor: pointer;
-    z-index: 201;
-    position: absolute;
-    right: 0;
-
-    margin: 10px;
-
-    transition: color 0.5s;
-    -webkit-transition: color 0.5s;
-    -moz-transition: color 0.5;
-
-}
-
-.delete:hover{
-    color: rgb(100, 130, 160);
 }
 
 p {
@@ -87,7 +57,7 @@ pre {
     display: inline-block;
     box-sizing: border-box;
     
-    margin: 0 5% 10% 5%; 
+    margin: 0 5%; 
     padding: 2%;
     white-space: none;
 
@@ -95,5 +65,39 @@ pre {
 }
 
 .modifiers {
-    display: none;
+    display: inline-block;
+    box-sizing: border-box;
+
+    vertical-align: bottom;
+
+    width: 98%;
+    height: 40px;
+    margin: 3% 1%;
+
+    padding: 1%;
+}
+
+btnImg {
+    width: 5px;
+    height: 5px;
+}
+
+button {
+    margin: 1%;
+    width: 20%;
+    font-size: 95%;
+
+    border: 0;
+    background-color: transparent;
+    box-shadow: 0;
+
+    animation-name: fadeIn;
+    animation-duration: 1s
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to { opacity: 1;}
 }
