@@ -50,7 +50,9 @@ export class TestCard implements OnInit{
                 
                 break;
             default:
-        }    
+        }
+
+           
     }
 
     onHover(){ } 

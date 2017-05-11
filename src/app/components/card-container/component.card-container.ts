@@ -10,7 +10,7 @@ import { Card } from 'app/services/card-manager.service';
 export class CardContainer {
 
     myCard: Card[] = [
-        new Card("text","Text Card Example","This is an example of a text image"),
+        new Card("text","Text Card Example","They say that pressure and stress creates beautiful things. Diamonds withstand incredible pressure during their creation. The clam deals with the annoying piece of sand during the creation of a pearl. The caterpillar deals with the stress and pressure of creating and being wrapped in a cocoon and having to break free before finding freedom in a new form. There are some types of plants and flowers that only bloom and grow after being burnt in a fire."),
         new Card("code", "Write to Prefs Script",
         ["string updatePrefs =",  
         "'* Preferences: * \\r\\n'",      
