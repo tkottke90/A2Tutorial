@@ -1,7 +1,7 @@
 :host {
     width: 98%;
     margin: 1%;
-    padding: 1%;
+
        
     display: block;
     box-sizing: border-box;
@@ -9,26 +9,30 @@
 
 .wrap {
     box-sizing: content-box;
+    width: 860px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 1px;
+    grid-template-columns: 275px 275px 275px;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0;
     grid-row-gap: 1px;
+
 
     justify-content: center;
     align-content: start;
 }
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 860px){
     .wrap{
-        grid-template-columns: 45% 45%;
+        width: 100%;
+        grid-template-columns: 275px 275px;
     }
 }
 
 @media only screen and (max-width: 575px){
     .wrap{
-        width: 550px ;
+        grid-template-columns: 275px;
     }
 }
 
