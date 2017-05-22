@@ -3,7 +3,6 @@
 }
 :host {
     width: 250px;
-    height: 80%;
     background-color: rgb(221, 239, 221);
     border-radius: 2%;
     display: inline-block;
@@ -19,7 +18,7 @@
     -webkit-transition: box-shadow 1s;
     -moz-transition: box-shadow 1s;
 
-    
+    flex: 1 1 auto;
 }
 
 :host:hover {
@@ -38,11 +37,15 @@ h1.hText {
 }
 
 p {
-    display: inline-block;
+    
+    display: block;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    width: 225px;
     height: 150px;
     font-size: 1.75vmin;
-    margin: 3%; 
+    margin: 3% auto; 
 }
 
 .imageDiv {
@@ -104,4 +107,9 @@ button {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@media only screen and (max-width: 500px){
+
+
 }

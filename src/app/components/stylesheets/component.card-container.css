@@ -10,34 +10,29 @@
 .wrap {
     box-sizing: content-box;
     width: 860px;
+    margin: 0 auto;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 275px 275px 275px;
-    grid-template-rows: auto auto;
-    grid-column-gap: 0;
-    grid-row-gap: 1px;
-
-
+    
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-content: start;
 }
 
 
 @media only screen and (max-width: 860px){
+
     .wrap{
-        width: 100%;
-        grid-template-columns: 275px 275px;
+        width: 575px;
     }
 }
 
 @media only screen and (max-width: 575px){
+
     .wrap{
-        grid-template-columns: 275px;
+        width: 450px;
     }
 }
 
 @media only screen and (max-width: 450px){
-    .wrap{
-        width: 95%;
-    }
+
 }
