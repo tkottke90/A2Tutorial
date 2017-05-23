@@ -1,21 +1,23 @@
-<div class="imageDiv" *ngIf="isImageEnabled">
-    <a [href]="cardData.imageURL">
-        <img [src]="cardData.imageURL" [alt]="cardData.header">
-    </a>
-</div>
-<h1 class="hImage" *ngIf="isImageEnabled">{{cardData.header}}</h1>
-<h1 class="hText" *ngIf="isTextEnabled">{{cardData.header}}</h1>
-<h1 class="hText" *ngIf="isCodeEnabled">{{cardData.header}}</h1>
+<div class="wrap">
+    <div class="imageDiv" *ngIf="isImageEnabled">
+        <a [href]="cardData.imageURL">
+            <img [src]="cardData.imageURL" [alt]="cardData.header">
+        </a>
+    </div>
+    <h1 class="hImage" *ngIf="isImageEnabled">{{cardData.header}}</h1>
+    <h1 class="hText" *ngIf="isTextEnabled">{{cardData.header}}</h1>
+    <h1 class="hText" *ngIf="isCodeEnabled">{{cardData.header}}</h1>
 
-<p *ngIf="isTextEnabled">{{ cardData.description }}</p>
+    <p *ngIf="isTextEnabled">{{ cardData.description }}</p>
 
-<pre *ngIf="isCodeEnabled"><code [innerHTML]="myCode"></code></pre>
+    <pre *ngIf="isCodeEnabled"><code [innerHTML]="myCode"></code></pre>
 
-<div class="modifiers">
-    <button id="share" *ngIf="isHoverTarget">
-        <img src="../../../../assets/share-icon.png" alt="share">
-    </button>
-    <button id="modify" *ngIf="isHoverTarget">modify</button>
-    <button id="archive" *ngIf="isHoverTarget">archive</button>
-    <button id="delete" *ngIf="isHoverTarget">delete</button>
+    <div class="modifiers">
+        <button id="share" *ngIf="isHoverTarget">
+            <img src="../../../../assets/share-icon.png" alt="share">
+        </button>
+        <button id="modify" *ngIf="isHoverTarget">modify</button>
+        <button id="archive" *ngIf="isHoverTarget">archive</button>
+        <button id="delete" *ngIf="isHoverTarget">delete</button>
+    </div>
 </div>
