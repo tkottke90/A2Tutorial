@@ -2,7 +2,6 @@
 <html>
     <head>
             <title>Blue&Yellow Brewing</title>
-            <link href="C:\Users\Thomas\Google Drive\Sync\HTML\W3 Tutorials\style.css" type="text/css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 			<style>
@@ -15,30 +14,79 @@
 					background-color: white;
 					width: 250px;
 					height: 270px;
-					padding: 1%;
 					margin: 10px auto;
 					
 				}
 
-				wrap {
-					display: flex;
-				
+				.wrap {
+					min-height: 100%;
+					box-sizing: border-box;
+					display: grid;
+					
+					grid-template-row: 27px 1fr 20px;
+					
+					position: relative;
+					z-index: 2;
 				}
 				
 				h1 {
 					font-size: 20px;
 					text-align: center;
-					width: 98%;
+					width: 100%;
+					height: 25px;
+					
+					margin: 0;
+					padding: 10px 0 0 0;
+					
+					grid-row: 1;
+				}
+				
+				h2 {
+					font-size: 20px;
+					text-align: center;
+					width: 100%;
+					height: 25px;
+					
+					margin: 0;
+					padding: 10px 0 0 0;
+					
+					grid-row: 2;
 				}
 				
 				p {
-					font-size: 10px;
-					width: 98%
+					font-size: 15px;
+					width: 250px;
+					max-height: 150px;
+					
+					box-sizing: border-box;
+					
+					grid-row: 2;
+					justify-self: start;
+					
+					margin: 0;
+					padding: 5px;
+					
+					overflow: hidden;
+				}
+				
+				img {
+					width: 100%;
+					max-height: 200px;
+					
+					position: relative;
+					z-index: 1
+					
 				}
 				
 				.mod {
-					width: 98%;
-					align: bottom;
+					width: 100%;
+					grid-row: 3;
+					
+					box-sizing: border-box;
+					margin : 0;
+					padding: 0 0 10px 0;
+					
+					justify-self: end;
 				}
 				
 				
@@ -48,9 +96,18 @@
             <div class="card">
 				<div class="wrap">
 					<h1>Header</h1>
-					<p>According to a draft spec, the above text should not fully collapse when the flex container is resized down. Because .subtitle has a width of 100%, the min-width: auto calculation that flexbox makes says that its container should be larger than we want.</p>
+					<p class="content">Grids are fundamental to the design of layouts. Over the Web’s relatively short life-span, developers have been trying all kinds of methods and hacks for laying out content in the browser. We started off with no way to do page layout, to table-based layouts, followed by float-based layouts.</p>
 					<div class="mod">Modifiers</div>
 				</div>
+			</div>
+			
+			<div class="card">
+				<img src="http://www.thinkgeek.com/images/products/additional/large/jipm_loz_triforce_light_vendor.jpg" alt="Triforce">
+				<div class="wrap">
+					<h2>Image</h2>
+					<div class="mod">Modifiers</div>
+				</div>
+				
 			</div>
     </body>
 <html>
