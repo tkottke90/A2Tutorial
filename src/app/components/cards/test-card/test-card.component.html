@@ -6,7 +6,7 @@
     </div>
     <h1 class="hImage" *ngIf="isImageEnabled">{{cardData.header}}</h1>
     <h1 class="hText" *ngIf="isTextEnabled">{{cardData.header}}</h1>
-    <h1 class="hText" *ngIf="isCodeEnabled">{{cardData.header}}</h1>
+    <h3 class="hText" *ngIf="isCodeEnabled">{{cardData.header}}</h3>
 
     <p *ngIf="isTextEnabled">{{ cardData.description }}</p>
 
@@ -16,8 +16,8 @@
         <button id="share" *ngIf="isHoverTarget">
             <img src="../../../../assets/share-icon.png" alt="share">
         </button>
-        <button id="modify" *ngIf="isHoverTarget">modify</button>
-        <button id="archive" *ngIf="isHoverTarget">archive</button>
-        <button id="delete" *ngIf="isHoverTarget">delete</button>
+        <button id="modify" *ngIf="isHoverTarget"></button>
+        <button id="archive" *ngIf="isHoverTarget"></button>
+        <button id="delete" *ngIf="isHoverTarget"></button>
     </div>
 </div>

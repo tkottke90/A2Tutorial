@@ -48,6 +48,21 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    box-sizing: border-box;
+    width: 40px;
+    
+    margin: 0;
+    padding: 10px 0 0 0;
+
+    grid-row: 3;
+    position: relative;
+    z-index: 501;
+
+    font-size: 20px;
+    text-align: center;
+}
+
 p {
     box-sizing: border-box;
     width: 100%;
@@ -123,9 +138,4 @@ button {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-@media only screen and (max-width: 500px){
-
-
 }
