@@ -10,30 +10,35 @@
 .wrap {
     box-sizing: content-box;
     width: 860px;
-    margin: 0 auto;
     overflow: hidden;
-    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 275px 275px 275px;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0;
+    grid-row-gap: 1px;
+
+    margin: 0 auto;
 
     justify-content: center;
+    align-content: start;
 }
 
 
 @media only screen and (max-width: 860px){
-
     .wrap{
-        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-template-columns: 275px 275px;
     }
 }
 
 @media only screen and (max-width: 575px){
-
     .wrap{
-        grid-template-columns: 1fr;
+        grid-template-columns: 275px;
     }
 }
 
 @media only screen and (max-width: 450px){
-
+    .wrap{
+        width: 95%;
+    }
 }
